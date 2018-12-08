@@ -1,0 +1,12 @@
+.\build\mbedcrc.o: ..\mbed\drivers\MbedCRC.cpp
+.\build\mbedcrc.o: ..\user\mbed_config.h
+.\build\mbedcrc.o: ..\mbed\drivers/TableCRC.h
+.\build\mbedcrc.o: ..\mbed\drivers/MbedCRC.h
+.\build\mbedcrc.o: ..\mbed\hal/crc_api.h
+.\build\mbedcrc.o: ..\mbed\platform/mbed_assert.h
+.\build\mbedcrc.o: ..\mbed\platform/mbed_preprocessor.h
+.\build\mbedcrc.o: ..\mbed\platform/mbed_toolchain.h
+.\build\mbedcrc.o: ..\mbed\platform/SingletonPtr.h
+.\build\mbedcrc.o: ..\mbed\platform/PlatformMutex.h
+.\build\mbedcrc.o: ..\mbed\platform/NonCopyable.h
+.\build\mbedcrc.o: ..\mbed\platform/mbed_debug.h
