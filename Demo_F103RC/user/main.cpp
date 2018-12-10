@@ -11,7 +11,7 @@ void toggle_led()
 }
 
 int main() {
-		toggle_led_ticker.attach(&toggle_led, 0.2);
+		toggle_led_ticker.attach(&toggle_led, 0.1);
     while(1) {
         led2 = 1; // LED is ON
         wait(1.0); // 200 ms

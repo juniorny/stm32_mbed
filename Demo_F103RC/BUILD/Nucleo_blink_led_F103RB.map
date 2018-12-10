@@ -10101,60 +10101,60 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-         0          0          0          0          0       2308   .\build\analogin.o
-         0          0          0          0          0       2156   .\build\atcmdparser.o
-         0          0          0          0          0        808   .\build\busin.o
-        14          0         30          0          0       2884   .\build\can.o
-       364         32          0          8          0      29890   .\build\can_api.o
-       146         22          0          8         16       2776   .\build\filebase.o
-        76          0         80          0          0      12148   .\build\filehandle.o
-       280         46          0          0          0      18296   .\build\filepath.o
-         0          0          0          0          0       2476   .\build\flashiap.o
-       594        136          0          0          0      12967   .\build\gpio_api.o
-       108         12          0          8          0      24346   .\build\hal_tick_overrides.o
-       146         10         61          0          0       7568   .\build\i2c.o
-         0          0          0          0          0       1536   .\build\interruptin.o
-         0          0          0          0          0       1020   .\build\interruptmanager.o
-         0          0          0          0          0       7016   .\build\lowpowertickerwrapper.o
-       610         62         16          0        120     469362   .\build\main.o
+         0          0          0          0          0       2304   .\build\analogin.o
+         0          0          0          0          0       2144   .\build\atcmdparser.o
+         0          0          0          0          0        800   .\build\busin.o
+        14          0         30          0          0       2864   .\build\can.o
+       364         32          0          8          0      29866   .\build\can_api.o
+       146         22          0          8         16       2756   .\build\filebase.o
+        76          0         80          0          0      12120   .\build\filehandle.o
+       280         46          0          0          0      18220   .\build\filepath.o
+         0          0          0          0          0       2472   .\build\flashiap.o
+       594        136          0          0          0      12943   .\build\gpio_api.o
+       108         12          0          8          0      24338   .\build\hal_tick_overrides.o
+       146         10         61          0          0       7532   .\build\i2c.o
+         0          0          0          0          0       1524   .\build\interruptin.o
+         0          0          0          0          0       1016   .\build\interruptmanager.o
+         0          0          0          0          0       6984   .\build\lowpowertickerwrapper.o
+       610         62         16          0        120     469198   .\build\main.o
         32          6          0          0          0        611   .\build\mbed_assert.o
-       230          4          5          0          0       2810   .\build\mbed_board.o
-       272         94          0          4          0       8499   .\build\mbed_critical.o
-       176         86          0          2          0     490657   .\build\mbed_critical_section_api.o
-       860        330         81         12        104       4177   .\build\mbed_error.o
-         0          0          0          0          0     473272   .\build\mbed_flash_api.o
-       110          0          0          0          0       2959   .\build\mbed_gpio.o
-       116         42          0          4          0        830   .\build\mbed_overrides.o
-       288         90          0          0          0      20944   .\build\mbed_pinmap_common.o
-      1886        278        120         80        321      44538   .\build\mbed_retarget.o
-        66          6          0          0          0       2514   .\build\mbed_sdk_boot.o
-       192         90          0         24          0       4848   .\build\mbed_sleep_manager.o
-      1574        114          0          0          0       8848   .\build\mbed_ticker_api.o
-        36         14         40          4         64       2005   .\build\mbed_us_ticker_api.o
-        84          6          0          0          0       2063   .\build\mbed_wait_api_no_rtos.o
-         0          0       1200          0          0       1656   .\build\peripheralpins.o
-      1184        158         64          0          0     404083   .\build\pinmap.o
-         0          0          0          0          0       1812   .\build\rawserial.o
+       230          4          5          0          0       2802   .\build\mbed_board.o
+       272         94          0          4          0       8463   .\build\mbed_critical.o
+       176         86          0          2          0     490609   .\build\mbed_critical_section_api.o
+       860        330         81         12        104       4153   .\build\mbed_error.o
+         0          0          0          0          0     473220   .\build\mbed_flash_api.o
+       110          0          0          0          0       2947   .\build\mbed_gpio.o
+       116         42          0          4          0        826   .\build\mbed_overrides.o
+       288         90          0          0          0      20920   .\build\mbed_pinmap_common.o
+      1886        278        120         80        321      44370   .\build\mbed_retarget.o
+        66          6          0          0          0       2494   .\build\mbed_sdk_boot.o
+       192         90          0         24          0       4828   .\build\mbed_sleep_manager.o
+      1574        114          0          0          0       8804   .\build\mbed_ticker_api.o
+        36         14         40          4         64       1989   .\build\mbed_us_ticker_api.o
+        84          6          0          0          0       2055   .\build\mbed_wait_api_no_rtos.o
+         0          0       1200          0          0       1648   .\build\peripheralpins.o
+      1184        158         64          0          0     404023   .\build\pinmap.o
+         0          0          0          0          0       1804   .\build\rawserial.o
          0          0          0          0          0       5480   .\build\serial.o
-       928        262          0          4         76       7529   .\build\serial_api.o
-        60          6          0          0        204       7669   .\build\serial_device.o
-        56          6          0          0          0       3084   .\build\serialbase.o
-       170         20          4          0        120       7016   .\build\spi.o
-        36          8        304          0          0        944   .\build\startup_stm32f103xe.o
-        42          6          0          0          0      80205   .\build\stm32f1xx_hal.o
-        40          8          0          0          0      25998   .\build\stm32f1xx_hal_cortex.o
-      1772        108          0          0          0       6144   .\build\stm32f1xx_hal_rcc.o
-       468         36          0          0          0       5146   .\build\stm32f1xx_hal_tim.o
-       572          6          0          0          0       2423   .\build\stm32f1xx_hal_uart.o
-       324         38          0          0          0       2755   .\build\system_clock.o
-       164         22         24          4          0       1638   .\build\system_stm32f1xx.o
-       306         16         20          0          0       5604   .\build\ticker.o
-       134         12         20          0          0       2520   .\build\timerevent.o
-         0          0          0          0          0      10900   .\build\uartserial.o
-       480         86         44          0         64      29277   .\build\us_ticker.o
+       928        262          0          4         76       7493   .\build\serial_api.o
+        60          6          0          0        204       7649   .\build\serial_device.o
+        56          6          0          0          0       3072   .\build\serialbase.o
+       170         20          4          0        120       6988   .\build\spi.o
+        36          8        304          0          0        940   .\build\startup_stm32f103xe.o
+        42          6          0          0          0      80177   .\build\stm32f1xx_hal.o
+        40          8          0          0          0      25990   .\build\stm32f1xx_hal_cortex.o
+      1772        108          0          0          0       6128   .\build\stm32f1xx_hal_rcc.o
+       468         36          0          0          0       5118   .\build\stm32f1xx_hal_tim.o
+       572          6          0          0          0       2411   .\build\stm32f1xx_hal_uart.o
+       324         38          0          0          0       2743   .\build\system_clock.o
+       164         22         24          4          0       1626   .\build\system_stm32f1xx.o
+       306         16         20          0          0       5572   .\build\ticker.o
+       134         12         20          0          0       2508   .\build\timerevent.o
+         0          0          0          0          0      10864   .\build\uartserial.o
+       480         86         44          0         64      29237   .\build\us_ticker.o
 
     ----------------------------------------------------------------------
-     15036       2278       2152        168       1092    2279015   Object Totals
+     15036       2278       2152        168       1092    2277643   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         40          0          7          6          3          0   (incl. Padding)
 
@@ -10307,8 +10307,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     25700       2778       2708        184       1372    2272299   Grand Totals
-     25700       2778       2708        184       1372    2272299   ELF Image Totals
+     25700       2778       2708        184       1372    2270927   Grand Totals
+     25700       2778       2708        184       1372    2270927   ELF Image Totals
      25700       2778       2708        184          0          0   ROM Totals
 
 ==============================================================================

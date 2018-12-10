@@ -558,13 +558,13 @@ d\hal\storage_abstraction -I.\mbed\hal\TARGET_FLASH_CMSIS_ALGO -I.\mbed\platfor
 m -I.\mbed\targets\TARGET_STM -I.\mbed\targets\TARGET_STM\TARGET_STM32F1 -I.\mb
 ed\targets\TARGET_STM\TARGET_STM32F1\device -I.\mbed\targets\TARGET_STM\TARGET_
 STM32F1\TARGET_NUCLEO_F103RB -I.\mbed\targets\TARGET_STM\TARGET_STM32F1\TARGET_
-NUCLEO_F103RB\device -IE:\electronics\mbed\NUCLEO-F103RB\Demo_F103RB\RTE -ID:\K
-eil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include -ID:\Keil_v5\ARM\CMSIS\
-Include --predefine="__UVISION_VERSION SETA 521" --predefine="STM32F10X_HD SETA
- 1" --cpreproc_opts=-D__ASSERT_MSG,-D__CMSIS_RTOS,-D__MBED_CMSIS_RTOS_CM,-DTRAN
-SACTION_QUEUE_SIZE_SPI=2,-D__CORTEX_M3,-DARM_MATH_CM3 --list=.\build\startup_st
-m32f103xe.lst mbed\targets\TARGET_STM\TARGET_STM32F1\TARGET_NUCLEO_F103RB\devic
-e\TOOLCHAIN_ARM_STD\startup_stm32f103xe.S
+NUCLEO_F103RB\device -IE:\electronics\mbed\stm32_mbed\Demo_F103RC\RTE -ID:\Keil
+_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include -ID:\Keil_v5\ARM\CMSIS\Inc
+lude --predefine="__UVISION_VERSION SETA 521" --predefine="STM32F10X_HD SETA 1"
+ --cpreproc_opts=-D__ASSERT_MSG,-D__CMSIS_RTOS,-D__MBED_CMSIS_RTOS_CM,-DTRANSAC
+TION_QUEUE_SIZE_SPI=2,-D__CORTEX_M3,-DARM_MATH_CM3 --list=.\build\startup_stm32
+f103xe.lst mbed\targets\TARGET_STM\TARGET_STM32F1\TARGET_NUCLEO_F103RB\device\T
+OOLCHAIN_ARM_STD\startup_stm32f103xe.S
 
 
 

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\BUILD\Nucleo_blink_led_F103RB.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\BUILD\Nucleo_blink_led_F103RB.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Fri Dec 07 20:12:00 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Mon Dec 10 19:36:09 2018
 <BR><P>
 <H3>Maximum Stack Usage =        736 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -943,8 +943,8 @@ Global Symbols
 <P><STRONG><a name="[da]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, D:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_memclr_w.o)(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::DigitalOut::DigitalOut(PinName)
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Transaction&lang;mbed::SPI&rang;::Transaction()
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Transaction&lang;mbed::SPI&rang;::Transaction()
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::DigitalOut::DigitalOut(PinName)
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handle_error
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_sdk_init
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_initio
@@ -1840,8 +1840,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_insert_event_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
 </UL>
 
 <P><STRONG><a name="[5f]"></a>mbed::TimerEvent::irq(unsigned)</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, .\build\timerevent.o(i._ZN4mbed10TimerEvent3irqEj))
@@ -1914,11 +1914,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 664 + Unknown Stack Size
 <LI>Call Chain = mbed::Ticker::setup(unsigned long long) &rArr; mbed::TimerEvent::insert_absolute(unsigned long long) &rArr; ticker_insert_event_us &rArr; core_util_critical_section_exit &rArr; hal_critical_section_exit &rArr; mbed_assert_internal &rArr; mbed_error &rArr; print_error_report &rArr; mbed_error_puts &rArr;  core_util_critical_section_exit (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_exit
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_read_us
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_read_us
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::TimerEvent::remove()
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::TimerEvent::insert_absolute(unsigned long long)
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_exit
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::attach_us(mbed::Callback&lang;void()&rang;, unsigned long long)
 </UL>
@@ -1929,10 +1929,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Callback&lang;void()&rang;::operator bool() const
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_unlock_deep_sleep_internal
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::TimerEvent::remove()
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Callback&lang;void()&rang;::~Callback()
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_exit
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::TimerEvent::remove()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::~Ticker()
 </UL>
@@ -2050,8 +2050,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[133]"></a>__aeabi_atexit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, .\build\mbed_retarget.o(i.__aeabi_atexit))
-<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_main_cpp_led1
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___7_SPI_cpp_ab1f1164
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___7_SPI_cpp_ab1f1164
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_main_cpp_led1
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;default_console()
 </UL>
 
@@ -2215,14 +2215,14 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_unlock_deep_sleep_internal
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_assert_internal
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::attach_us(mbed::Callback&lang;void()&rang;, unsigned long long)
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_lock_deep_sleep_internal
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_set_handler
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_remove_event
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_insert_event_us
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_read_us
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::attach_us(mbed::Callback&lang;void()&rang;, unsigned long long)
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_lock_deep_sleep_internal
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_irq_handler
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_die
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_error_puts
@@ -2237,14 +2237,14 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_critical_section_exit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_unlock_deep_sleep_internal
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::attach_us(mbed::Callback&lang;void()&rang;, unsigned long long)
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_lock_deep_sleep_internal
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_set_handler
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_remove_event
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_insert_event_us
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_read_us
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::attach_us(mbed::Callback&lang;void()&rang;, unsigned long long)
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_manager_lock_deep_sleep_internal
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::setup(unsigned long long)
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticker_irq_handler
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_error_puts
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handle_error
@@ -2444,10 +2444,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_error
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
-<LI><a href="#[1ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SingletonPtr&lang;PlatformMutex&rang;::get() const
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core_util_critical_section_enter
+<LI><a href="#[1ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SingletonPtr&lang;PlatformMutex&rang;::get() const
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_critical_section_exit
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;schedule_interrupt
 <LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initialize
@@ -2983,8 +2983,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[14c]"></a>mbed::Callback&lang;void()&rang;::operator bool() const</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, .\build\can.o(t._ZNK4mbed8CallbackIFvvEEcvbEv))
-<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::handler()
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::Ticker::detach()
 </UL>
 
 <P><STRONG><a name="[1a9]"></a>__aeabi_f2iz</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, D:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\fz_ws.l(ffix.o)(x$fpl$ffix))
